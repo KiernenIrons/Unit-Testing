@@ -1,6 +1,6 @@
 #include "Game.h"
 
-std::set<float> Game::generateNumbers(int t_amount)
+std::set<int> Game::generateNumbers(int t_amount)
 {
 	while (m_numberList.size() < t_amount)
 	{
@@ -14,5 +14,5 @@ std::set<float> Game::generateNumbers(int t_amount)
 		std::cout << it << std::endl;
 	}
 
-	return std::set<float>();
+	return m_numberList;
 }
